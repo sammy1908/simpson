@@ -3,7 +3,7 @@ from PIL import Image
 
 from Method.method import method_page,pres_page
 
-image = Image.open(r'C:\Users\Juan Riquelme\Documents\TRABAJOS\CODING\Proyectos\Simpson\Logos.png')
+image = Image.open(r'Logos.png')
 st.image(image)
 
 page = "Presentación"
