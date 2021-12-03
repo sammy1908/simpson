@@ -36,7 +36,7 @@ def method_page():
     """
     st.markdown(title, unsafe_allow_html=True)
     st.write(""" Para este programa se esta utilizando python, por lo tanto
-                las potencias son equivalentes a **, tambíen están los simbolos
+                las potencias son equivalentes a ***, tambíen están los simbolos
                 básicos de +,-,*,/ y  funciones como sen(), cos(), tan(), pi, sqrt()
                 """)
 
