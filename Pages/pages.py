@@ -1,6 +1,7 @@
 from Method.method import simpson_method
 import streamlit as st
 import sympy as sp
+from PIL import Image
 
 
 def method_page():
@@ -85,3 +86,22 @@ def pres_page():
     </style>
     """
     st.markdown(title, unsafe_allow_html=True)
+
+
+def end_page():
+    image = Image.open(r'saludo.png')
+    title = """
+    <h5 class="title">Muchas gracias por el tiempo dedicado profesor. Ha sido un placer para nosotras el contar con su apoyo, dedicación y compromiso, su labor es muy valiosa.</h5>
+        <style>
+        .title {
+        width: 100%;
+        text-align: center;
+        }
+    </style>
+    """
+    st.markdown(title , unsafe_allow_html=True)
+
+    col1,col2,col3 = st.columns(3)
+    with col2:
+        st.image(image)
+
